@@ -54,10 +54,8 @@ public:
 
         int nonzeroPointer = zeroPointer + 1;
 
-        while(zeroPointer < n && nonzeroPointer < n)
+        while(nonzeroPointer < n)
         {
-            if(zeroPointer > nonzeroPointer) break;
-
             if(nums[nonzeroPointer] != 0)
             {
                 swap(nums[zeroPointer] , nums[nonzeroPointer]);
