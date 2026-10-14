@@ -106,6 +106,28 @@ public:
         // return sumExpected - sumActual;
 
         //Optimal Approach 3 : using the XOR method .
+        //int xorResult = nums.size();
+
+        // for(int i = 0; i < nums.size(); i++)
+        // {
+        //     xorResult ^= i ^ nums[i];
+        // }
+
+        // return xorResult;
+
+        /*
+            approach notes #for me obv :)
+            
+            in xor : 
+            1. xor of same nos : 0
+            2. xor of 0 and a no : no
+
+            in this : we will try to make pairs 
+
+            why : if pairs existed , they will cancel each other by xor and that value will remain which have no pair , as 0 xor X : X
+
+            so , x will be our final answer ....
+        */
 
         
     }
