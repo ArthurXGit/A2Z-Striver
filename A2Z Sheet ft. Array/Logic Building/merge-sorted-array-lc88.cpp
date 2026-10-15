@@ -3,7 +3,7 @@ public:
     void merge(vector<int>& nums1, int m, vector<int>& nums2, int n)
     {
 
-        //approach : Two Pointers (solved this by taking an array)
+        //approach : Two Pointers (solved this by taking an extra space)
         //TC : O(M + N)
         //SC : O(M + N) 
         
