@@ -66,7 +66,7 @@ public:
             if(tracker[nums[i]] == 1) tracker2.emplace_back(nums[i]);
         }
 
-        //if no one has the size of 1 , then it will simply return -1 (indicates that there is no missing number present
+        //if no one has the size of 1 , then it will simply return -1 (indicates that there is no missing number present)
         if(tracker2.size() == 0) return -1;
 
         /*
