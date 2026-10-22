@@ -13,6 +13,19 @@ public:
             x is to traverse within the subarray
         */
         
+        //in case if k is equal to size of given array , for that return the largest element present in that array
+        if(k == nums.size())
+        {
+            int largest1 {};
+    
+            for(int i = 0; i < nums.size(); i++)
+            {
+                if(nums[i] > largest1) largest1 = nums[i];
+            }
+    
+            return largest1;
+        }
+        
         int i {};
         int j = k - 1;
         int x {};
@@ -45,18 +58,6 @@ public:
             }
         }
 
-        //in case if k is equal to size of given array , for that return the largest element present in that array
-        if(k == nums.size())
-        {
-            int largest1 {};
-
-            for(int i = 0; i < nums.size(); i++)
-            {
-                if(nums[i] > largest1) largest1 = nums[i];
-            }
-
-            return largest1;
-        }
 
         //it will store those elements whose count is one
         vector<int> tracker2;
