@@ -3,7 +3,7 @@ public:
     int largestInteger(vector<int>& nums, int k)
     {
         //note : "k" represents the size of the subarray...
-        //Approach 1 : hashmap + pointers
+        //Approach 1 : hashmap + pointers 
         
         if(nums.size() == 1) return nums[0];
 
