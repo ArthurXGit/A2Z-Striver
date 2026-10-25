@@ -1,3 +1,6 @@
+
+//Concept of this problem : Two pointers swapping (slow and fast pointer)
+
 class Solution {
 public:
     void moveZeroes(vector<int>& nums)
@@ -36,7 +39,7 @@ public:
   
         //2. Optimal Approach : Two Pointers
         //mistake : doing the same thing to allocate the pointer location zeroPointer to nonzeroPointer
-        //TC : 
+        //TC : O(N)
         //SC : O(1)
 
         int n = nums.size();
