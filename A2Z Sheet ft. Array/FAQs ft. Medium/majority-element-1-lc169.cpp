@@ -1,29 +1,43 @@
 /*
-    intuition: 
-
-    lets take an example array [7 , 7 , 1 , 2 , 7 , 4]
+    Intuition: 
+    
+    lets take an example array [7 , 7 , 1 , 2 , 7 , 4 , 5 , 7 , 5 , 5 , 6 , 6 , 5 , 5 , 5 , 5]
     so we will increase the count when we find 7 & decrease when we found other
-
-    so for three count of '7' , there are three another numbers to counter the count 
-
-    for an element to an majority element , it should be appear for > n / 2 tines
-
+    
+    so for three count of '7' , there are three another numbers to counter the count (look in this array [7 , 7 , 1 , 2 , 7 , 4])
+    
     in this case , three 7's and three other nos are present to nullify the count
-    that's why it cant be the majority element
 
-    but what if , we found the majority element by this method and later we found that it is not appeared > n / 2 times ?
+    then we move further , taking 5 as the element
+    but as soon as we move futher 5 , it's count is again zero
 
+    you can look here , in [5 , 7] to counter 5 , 7 is present
+
+    now move further , in [5 , 5 , 6 , 6]
+    two 5's and two 6's 
+    so again same thing happened
+
+    now in [5 , 5 , 5 , 5] , there's no other element to counter 5
+    so 5 is the majority element.
+
+    but in place of [5 , 5 , 5 , 5] , if there are all 1's 
+    technically by executing this algorithm , we found that 1 is in majority but the condition we have to check is ...
+    does it appear in the array n / 2 times...
+    
     explaining.....
-
     consider this array [7 , 7 , 1 , 2 , 7 , 4 , 5 , 7 , 5 , 5  , 6 , 6 , 1 , 1 , 1 , 1]
-
+    
     here , we got 1 at the end as the element
-
+    
     but we have to check in the entire array that how many times it is appearing 
 
-    it is appearing 4 times , but here required count = 9 times
+    it is appearing 4 times , but here required count > 8 times
 
-    so if it's not the majority element , then there is no possibility of any of them will be the majority element.
+    so if it's not the majority element , then there is no possibility of any of them to be the majority element.
+
+    for this , we have to run a loop for counting the element's count.
+
+    if it satisfies the condition , then it's the majority element  :)
 */
 
 class Solution {
