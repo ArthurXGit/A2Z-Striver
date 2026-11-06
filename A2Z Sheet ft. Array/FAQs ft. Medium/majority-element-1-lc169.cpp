@@ -1,3 +1,31 @@
+/*
+    intuition: 
+
+    lets take an example array [7 , 7 , 1 , 2 , 7 , 4]
+    so we will increase the count when we find 7 & decrease when we found other
+
+    so for three count of '7' , there are three another numbers to counter the count 
+
+    for an element to an majority element , it should be appear for > n / 2 tines
+
+    in this case , three 7's and three other nos are present to nullify the count
+    that's why it cant be the majority element
+
+    but what if , we found the majority element by this method and later we found that it is not appeared > n / 2 times ?
+
+    explaining.....
+
+    consider this array [7 , 7 , 1 , 2 , 7 , 4 , 5 , 7 , 5 , 5  , 6 , 6 , 1 , 1 , 1 , 1]
+
+    here , we got 1 at the end as the element
+
+    but we have to check in the entire array that how many times it is appearing 
+
+    it is appearing 4 times , but here required count = 9 times
+
+    so if it's not the majority element , then there is no possibility of any of them will be the majority element.
+*/
+
 class Solution {
 public:
     int majorityElement(vector<int>& nums)
